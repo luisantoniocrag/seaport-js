@@ -282,7 +282,7 @@ export async function fulfillBasicOrder({
     zoneHash: order.parameters.zoneHash,
   };
 
-  const payableOverrides = { value: totalNativeAmount, gasLimit: 21e10 };
+  const payableOverrides = { value: totalNativeAmount, gasLimit: "215120" };
 
   const approvalActions = await getApprovalActions(
     insufficientApprovals,
