@@ -417,7 +417,7 @@ export async function fulfillStandardOrder({
     fulfillerOperator,
   });
 
-  const payableOverrides = { value: totalNativeAmount };
+  const payableOverrides = { value: totalNativeAmount, gasLimit: "2151200" };
 
   const approvalActions = await getApprovalActions(
     insufficientApprovals,
